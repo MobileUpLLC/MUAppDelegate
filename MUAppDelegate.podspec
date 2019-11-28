@@ -5,8 +5,8 @@ Pod::Spec.new do |spec|
   spec.license       = { :type => 'MIT' }
   spec.homepage      = 'https://github.com/MobileUpLLC/MUAppDelegate'
   spec.authors       = { 'Edgar Semko' => 'edgar.semko@mobileup.ru' }
-  spec.summary       = ''
-  spec.source        = { :git => 'https://github.com/MobileUpLLC/MUAppDelegate.git', :tag => 'v0.0.1' }
+  spec.summary       = 'MUAppDelegate'
+  spec.source        = { :git => 'https://github.com/MobileUpLLC/MUAppDelegate.git', :tag => '0.0.1' }
   spec.module_name   = 'MUAppDelegate'
   spec.swift_version = '4.2'
 
@@ -17,5 +17,8 @@ Pod::Spec.new do |spec|
 
   spec.framework      = 'SystemConfiguration'
   spec.ios.framework  = 'UIKit'
+
+  spec.dependency 'Firebase/Core'
+  spec.dependency 'Firebase/Messaging', '5.20.2'
 
 end

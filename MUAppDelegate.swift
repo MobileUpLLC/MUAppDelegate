@@ -7,10 +7,6 @@
 
 import UIKit
 
-import CMTSDK
-
-import CoreTelephony
-
 import Firebase
 import FirebaseMessaging
 
