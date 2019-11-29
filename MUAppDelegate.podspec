@@ -18,7 +18,9 @@ Pod::Spec.new do |spec|
   spec.framework      = 'SystemConfiguration'
   spec.ios.framework  = 'UIKit'
 
-  spec.dependency 'Firebase/Core'
-  spec.dependency 'Firebase/Messaging', '5.20.2'
+  spec.ios.dependency 'Firebase/Core'
+  spec.ios.dependency 'Firebase/Messaging', '5.20.2'
+
+  spec.static_framework = true
 
 end
